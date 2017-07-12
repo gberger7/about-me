@@ -1,0 +1,26 @@
+/*first paragraph*/
+h1 {
+  text-decoration: underline;
+}
+body {
+  font-family: Arial;}
+
+/*second paragraph*/
+h2 {
+  color: brown;
+  font-size: 150%;
+}
+.info {
+  border: 2px solid black;
+  width: 400px;
+}
+
+/*third paragraph*/
+h3 {
+  color: brown;
+  font-size: 150%;
+}
+.hobby {
+  border: 2px solid black;
+  width: 400px;
+}
