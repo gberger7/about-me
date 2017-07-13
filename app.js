@@ -6,10 +6,10 @@ function question(i) {
   var ans = prompt(questionArray[i]).toUpperCase();
 
   if(ans === correctAnswer[i]) {
-    alert(c[i]);
+    alert(correctAlert[i]);
     console.log('got it right')
   } else {
-    alert(d[i]);
+    alert(wrongAlert[i]);
     console.log('got it wrong');
   }
 
@@ -17,9 +17,9 @@ function question(i) {
 
 // variables to input into each iteration of the function
 var questionArray = ['Hello! Is my name Gabe?', 'Am I 18 years old?', 'Am I from Brier, Washington?', 'Are my first two hobbies listed, that I love to shoot hoops and play my guitar?', 'Is my last hobby listed, that I love to go fishing?'];
-var correctAnswer = ['YES', 'NO', 'YES', 'Yes', 'NO'];
-var c = ['That is correct my name is Gabe!', 'That is correct I am not 18. I am actually 19 years old!', 'That is correct I am from Brier, Washington!', 'That is correct! I do love to shoot hoops, as well as, play my guitar!', 'That is correct! I actually prefer hanging out with friends, rather than going fishing'];
-var d = ['Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect']
+var correctAnswer = ['YES', 'NO', 'YES', 'YES', 'NO'];
+var correctAlert = ['That is correct my name is Gabe!', 'That is correct I am not 18. I am actually 19 years old!', 'That is correct I am from Brier, Washington!', 'That is correct! I do love to shoot hoops, as well as, play my guitar!', 'That is correct! I actually prefer hanging out with friends, rather than going fishing'];
+var wrongAlert = ['Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect']
 
 // calling function for each question
 question(0);
