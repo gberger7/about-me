@@ -1,5 +1,5 @@
 'use strict'
-// qurestion1
+// question1
 var answer1 = prompt('Hello! Is my name Gabe?').toUpperCase();
 if (answer1 === "YES" || answer1 === "Y") {
   alert('That is correct my name is Gabe!');
@@ -48,4 +48,58 @@ if (answer2 === "NO" || answer2 === "N") {
 else {
   alert('Sorry that is incorrect');
   console.log('The user answered ' + answer2 + ' to whether my last hobby was that I love to go fishing.')
+}
+// question6
+
+var numGuesses = 0;
+var correctAnswer = 6;
+while (numGuesses < 4){
+  var userGuess = prompt('Can you guess how to times I have broken my nose? You have 4 guesses. Goodluck!').toUpperCase();
+  if (userGuess < 6){
+    alert('Sorry your guess is too low. Try a higher number.');
+    console.log('The user guessed' + userGuess + 'which is too low')
+    numGuesses++;
+  } else if (userGuess > 6) {
+    alert('Sorry you guess is to high. Try a lower number.')
+    console.log('The user guessed' + userGuess + 'which is too high')
+    numGuesses++;
+  }
+  if(userGuess == 6) {
+    alert('Correct!');
+    console.log('The user guessed' + userGuess + 'which is the correct answer.')
+    numGuesses = 4;
+    break;
+  }
+  if (numGuesses === 4) {
+
+    alert('Sorry you are out of tries.')
+    console.log('The user guessed ' + userGuess + ' and is now out of guesses.')
+  }
+}
+
+
+// question7
+var states = ['Tennesee', 'Washington']
+var numberGuesses = 0;
+while (numberGuesses < 6) {
+
+  var answer7 = prompt('What states have I lived in? You have 6 guesses. Goodluck!').toUpperCase();
+  for (var i = 0; i < states.length; i++) {
+    if (userGuess === states.toUpperCase())
+    {
+      alert('Correct! Pretty much every piece of clothing in my whole wardrobe is red!');
+      console.log('The user answered ' + answer7 + ' to whether my name was Gabe.')
+      break;
+    }
+
+    if (answer1 === states[i]) {
+      alert('Sorry that is incorrect. You have 5 guessesd left');
+      console.log('The user answered' + answer7 + 'which was incorrect')
+    }
+
+    else {
+      alert('Sorry that is incorrect. You have 3 guesses left.');
+      console.log('The user answered ' + answer7 + ' to whether my name was Gabe.')
+    }
+  }
 }

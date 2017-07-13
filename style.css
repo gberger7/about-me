@@ -1,13 +1,15 @@
 /*first paragraph*/
 h1 {
-  text-decoration: underline;
+  background-color: #523E29;
+  color: white;
 }
 body {
-  font-family: Arial;}
-
+  font-family: Arial;
+  background-color: #F2E4BE;
+}
 /*second paragraph*/
 h2 {
-  color: brown;
+  color: #523E29;
   font-size: 150%;
 }
 .info {
@@ -17,10 +19,16 @@ h2 {
 
 /*third paragraph*/
 h3 {
-  color: brown;
+  color: #523E29;
   font-size: 150%;
 }
 .hobby {
   border: 2px solid black;
   width: 400px;
+}
+/*fourth paragraph*/
+.top {
+  border: 2px solid black;
+  width: 400px;
+  color:#523E29
 }
