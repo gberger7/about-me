@@ -71,35 +71,32 @@ while (numGuesses < 4){
     break;
   }
   if (numGuesses === 4) {
-
     alert('Sorry you are out of tries.')
     console.log('The user guessed ' + userGuess + ' and is now out of guesses.')
   }
 }
-
-
 // question7
-var states = ['Tennesee', 'Washington']
+var cities = ['SPOKANE', 'BELLINGHAM', 'MADISON']
 var numberGuesses = 0;
 while (numberGuesses < 6) {
+  var answer7 = prompt('What states have I lived in besides Seattle? You have 6 guesses. Goodluck!').toUpperCase();
 
-  var answer7 = prompt('What states have I lived in? You have 6 guesses. Goodluck!').toUpperCase();
-  for (var i = 0; i < states.length; i++) {
-    if (userGuess === states.toUpperCase())
-    {
-      alert('Correct! Pretty much every piece of clothing in my whole wardrobe is red!');
+  for (var i = 0; i < cities.length; i++) {
+    if (answer7 === cities[i]) {
+      alert('Correct! Way to go!');
       console.log('The user answered ' + answer7 + ' to whether my name was Gabe.')
+      numberGuesses = 7;
       break;
     }
-
-    if (answer1 === states[i]) {
-      alert('Sorry that is incorrect. You have 5 guessesd left');
+}
+    if (numberGuesses < 6){
+      numberGuesses++;
+      alert('Sorry that is incorrect. You have ' + (6 - numberGuesses) + ' guessesd left.');
       console.log('The user answered' + answer7 + 'which was incorrect')
     }
 
-    else {
-      alert('Sorry that is incorrect. You have 3 guesses left.');
+    if (numberGuesses === 0) {
+      alert('Sorry you are out of guesses. Better luck next time');
       console.log('The user answered ' + answer7 + ' to whether my name was Gabe.')
     }
-  }
 }

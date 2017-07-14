@@ -1,7 +1,11 @@
 /*first paragraph*/
 h1 {
-  background-color: #523E29;
+  background:#523E29;
   color: white;
+  max-width: 600px;
+  margin: 0 inherit;
+  text-align: center;
+  background-position: center;
 }
 body {
   font-family: Arial;
