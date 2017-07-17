@@ -1,38 +1,67 @@
 /*first paragraph*/
 h1 {
-  background:#523E29;
-  color: white;
-  max-width: 600px;
-  margin: 0 inherit;
+  background: linear-gradient(to top, tan, white);
+  color: black;
+  max-width: 1000px 0;
+  height: 300px;
   text-align: center;
+  text-decoration: underline;
   background-position: center;
+  font-size: 130px;
+  font-weight: 100;
+  font-family: helvetica;
 }
 body {
-  font-family: Arial;
-  background-color: #F2E4BE;
+  font-family: helvetica;
+  background-color: white;
 }
 /*second paragraph*/
 h2 {
-  color: #523E29;
+  color: black;
   font-size: 150%;
+  margin: auto;
+  font-family: helvetica;
+
 }
 .info {
-  border: 2px solid black;
+  vertical-align: top !important;
+  float: left;
   width: 400px;
+  margin: left;
+  font-family: helvetica;
+  color: black;
+
+
 }
 
 /*third paragraph*/
 h3 {
-  color: #523E29;
+  color: black;
   font-size: 150%;
+  font-family: helvetica;
 }
 .hobby {
-  border: 2px solid black;
   width: 400px;
+  margin: auto;
+  font-family: helvetica;
+
 }
 /*fourth paragraph*/
-.top {
-  border: 2px solid black;
+.topten {
+  font-family: helvetica;
   width: 400px;
-  color:#523E29
+  color: black;
+}
+
+.aligntop {
+  vertical-align: top;
+  text-align: center;
+  }
+
+  .textalign {
+  text-align: center;
+  }
+
+table {border: 2px solid black;
+      margin: 0 auto 10px auto;
 }

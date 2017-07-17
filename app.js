@@ -16,9 +16,9 @@ function question(i) {
 }
 
 // variables to input into each iteration of the function
-var questionArray = ['Hello! Is my name Gabe?', 'Am I 18 years old?', 'Am I from Brier, Washington?', 'Are my first two hobbies listed, that I love to shoot hoops and play my guitar?', 'Is my last hobby listed, that I love to go fishing?'];
+var questionArray = ['Hello! Is my name Gabe?', 'Am I 21 years old?', 'Am I from Brier, Washington?', 'Are my first two hobbies listed, that I love to shoot hoops and play my guitar?', 'Is my last hobby listed, that I love to go fishing?'];
 var correctAnswer = ['YES', 'NO', 'YES', 'YES', 'NO'];
-var correctAlert = ['That is correct my name is Gabe!', 'That is correct I am not 18. I am actually 19 years old!', 'That is correct I am from Brier, Washington!', 'That is correct! I do love to shoot hoops, as well as, play my guitar!', 'That is correct! I actually prefer hanging out with friends, rather than going fishing'];
+var correctAlert = ['That is correct my name is Gabe!', 'That is correct I am not 21. I am actually 19 years old!', 'That is correct I am from Brier, Washington!', 'That is correct! I do love to shoot hoops, as well as, play my guitar!', 'That is correct! I actually prefer hanging out with friends, rather than going fishing'];
 var wrongAlert = ['Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect', 'Sorry that is incorrect']
 
 // calling function for each question
@@ -58,7 +58,7 @@ while (numGuesses < 4){
 var cities = ['SPOKANE', 'BELLINGHAM', 'MADISON']
 var numberGuesses = 0;
 while (numberGuesses < 6) {
-  var answer7 = prompt('What states have I lived in besides Seattle? You have 6 guesses. Goodluck!').toUpperCase();
+  var answer7 = prompt('What cities have I lived in besides Seattle? You have 6 guesses. Goodluck!').toUpperCase();
 
   for (var i = 0; i < cities.length; i++) {
     if (answer7 === cities[i]) {
