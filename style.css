@@ -1,7 +1,22 @@
 /*first paragraph*/
+.header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/MEandMO.jpg);
+  background-size: cover;
+  margin-bottom: 400px;
+
+
+
+}
+*{
+  font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+}
 h1 {
-  background: linear-gradient(to top, tan, white);
-  color: black;
+  /*background: linear-gradient(to top, tan, white);*/
+  color: white;
   max-width: 1000px 0;
   height: 300px;
   text-align: center;
@@ -9,7 +24,8 @@ h1 {
   background-position: center;
   font-size: 130px;
   font-weight: 100;
-  font-family: helvetica;
+  /*font-family: helvetica;*/
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 body {
   font-family: helvetica;
@@ -18,13 +34,13 @@ body {
 /*second paragraph*/
 h2 {
   color: black;
-  font-size: 150%;
+  font-size: 235%;
   margin: auto;
-  font-family: helvetica;
+  /*font-family: helvetica;*/
+  font-family: 'Open Sans Condensed', sans-serif;
 
 }
 .info {
-  vertical-align: top !important;
   float: left;
   width: 400px;
   margin: left;
@@ -61,7 +77,26 @@ h3 {
   .textalign {
   text-align: center;
   }
+  .footer{
+    bottom: 0px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 
+    height: 450px;
+
+  }
+
+}
 table {border: 2px solid black;
       margin: 0 auto 10px auto;
+
+
+      color: black
+
+}
+
+li {
+  list-style-type: none;
+  font-size: 150%
 }
